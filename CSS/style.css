@@ -192,7 +192,7 @@ border-radius: 5px;
   #introImage {
 
     grid-area: introImage;
-    background-image: url("/images/GD_2021_Intro_Graphic_fix2.png");
+    background-image: url("images/GD_2021_Intro_Graphic_fix2.png");
    
     }
 
@@ -242,7 +242,7 @@ background-color: rgba(255,255,255,.6);
 
    #inspirationImage {
 grid-area: inspirationImage;
-    background-image: url(images/GD_2021_Bookscopy.png
+    background-image: url("Images/GD_2021_Bookscopy.png"
     );
 margin-top: -200px;
     }
