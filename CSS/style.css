@@ -192,7 +192,7 @@ border-radius: 5px;
   #introImage {
 
     grid-area: introImage;
-    background-image: url(images/GD_2021_Intro_Graphic_fix2.png);
+    background-image: url(./images/GD_2021_Intro_Graphic_fix2.png);
    }
 
    #introTextBox {
@@ -241,7 +241,7 @@ background-color: rgba(255,255,255,.6);
 
    #inspirationImage {
 grid-area: inspirationImage;
-    background-image: url(images/GD_2021_Bookscopy.png);
+    background-image: url(./images/GD_2021_Bookscopy.png);
 margin-top: -200px;
     }
 
@@ -301,7 +301,7 @@ height: fit-auto;
 #inspiration2Image {
 position: relative;
   grid-area: inspiration2Image;
-  background-image: url(images/GD_2021_Armature.png);
+  background-image: url(./images/GD_2021_Armature.png);
   background-size: contain;
 width: auto;
   height:auto;
@@ -367,7 +367,7 @@ justify-content: center;
 
  #casestudiesimage {
 grid-area: casestudiesimage;
-  background-image: url(images/GD_2021_CaseStudies_Home.png);
+  background-image: url(./images/GD_2021_CaseStudies_Home.png);
 
   }
 
@@ -480,7 +480,7 @@ grid-template-areas:
 
 #box1 {
   grid-area: box1;
-  background-image: url(images/GD_2021_Inspiration_1.png);
+  background-image: url(./images/GD_2021_Inspiration_1.png);
   background-size: contain;
   position: relative;
 }
@@ -495,21 +495,21 @@ grid-template-areas:
         
 #box3 {
   grid-area: box3;
-  background-image: url(images/GD_2021_Inspiration_3.png);
+  background-image: url(./images/GD_2021_Inspiration_3.png);
   background-size: contain;
   position: relative;
 }
             
 #box4 {
   grid-area: box4;
-  background-image: url(images/GD_2021_Inspiration_4.png);
+  background-image: url(./images/GD_2021_Inspiration_4.png);
   background-size: contain;
   position: relative;
 }
             
 #box5 {
   grid-area: box5;
-  background-image: url(images/GD_2021_Inspiration_5.png);
+  background-image: url(./images/GD_2021_Inspiration_5.png);
   background-size: contain;
   position: relative;
 }
@@ -535,7 +535,7 @@ grid-template-areas:
   #footerImage {
 
     grid-area: footerImage;
-    background-image: url(images/footer.png);
+    background-image: url(./images/footer.png);
   position: relative;
  justify-content: center;
     padding-left: 25px;
@@ -594,7 +594,7 @@ grid-template-areas:
 
 #box1 {
   grid-area: box1;
-  background-image: url(images/GD_2021_Inspiration_1.png);
+  background-image: url(./images/GD_2021_Inspiration_1.png);
   background-size: contain;
 padding-left: 200px;
 padding-right: 200px;
@@ -606,7 +606,7 @@ padding-bottom: 500px;
 
 #box2 {
   grid-area: box2;
-  background-image: url(images/GD_2021_Inspiration_2.png);
+  background-image: url(./images/GD_2021_Inspiration_2.png);
   background-size: contain;
   padding-left: 200px;
   padding-right: 200px;
@@ -618,7 +618,7 @@ padding-bottom: 500px;
         
 #box3 {
   grid-area: box3;
-  background-image: url(images/GD_2021_Inspiration_3.png);
+  background-image: url(./images/GD_2021_Inspiration_3.png);
   background-size: contain;
 padding-left: 200px;
 padding-right: 200px;
@@ -630,7 +630,7 @@ padding-bottom: 500px;
             
 #box4 {
   grid-area: box4;
-  background-image: url(images/GD_2021_Inspiration_4.png);
+  background-image: url(./images/GD_2021_Inspiration_4.png);
   background-size: contain;
 padding-left: 200px;
 padding-right: 200px;
@@ -642,7 +642,7 @@ padding-bottom: 500px;
             
 #box5 {
   grid-area: box5;
-  background-image: url(images/GD_2021_Inspiration_5.png);
+  background-image: url(./images/GD_2021_Inspiration_5.png);
   background-size: contain;
 padding-left: 200px;
 padding-right: 200px;
