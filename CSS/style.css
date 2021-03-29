@@ -1,0 +1,686 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arsenal', sans-serif;
+    
+      
+}
+
+#navBar {
+  position: fixed;
+   top: 0;
+   width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0,100);
+    z-index: 200;
+  }
+
+  .logoheader {
+      color: white;
+      letter-spacing: 3.5px;
+      margin-left: 25px;
+  }
+  .navtext {
+      color: white;
+      letter-spacing: 3px;
+      
+     }
+
+     .navtext a {
+      color: white;
+      letter-spacing: 3px;
+      text-decoration: none;
+
+     }
+  #navBar h1 {
+    width: 100%;
+    font-weight: bold;
+  }
+  #navigation {
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+
+  .hamburger{
+    opacity: 0;
+   position: relative; 
+   display: flex;
+   justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 25px;
+border-radius: 5px;
+transition: all .5s ease-in-out;
+  
+  }
+  
+  .hamburgerbutton{
+    opacity: 0;
+    width: 35px;
+height: 5px;
+background: white;
+border-radius: 5px;
+transition: all .5s ease-in-out;  
+}
+
+.hamburgerbutton::before,
+.hamburgerbutton::after {
+  content:'';
+  position:absolute;
+  width: 35px;
+height: 5px;
+background: white;
+border-radius: 5px;
+transition: all .5s ease-in-out;
+}
+
+.hamburgerbutton::before{
+  transform: translateY(-12px);
+}
+
+.hamburgerbutton::after{
+  transform: translateY(12px);
+}
+
+.hamburger.open .hamburgerbutton {
+  
+  background: transparent;
+}
+
+.hamburger.open .hamburgerbutton::before {
+  transform: rotate(45deg);
+}
+
+.hamburger.open .hamburgerbutton::after {
+  transform: rotate(-45deg);
+}
+ 
+
+
+@media only screen and (max-width: 1000px) {
+  .hamburger{
+    opacity: 100;
+      display: flex;
+      flex-direction: column;
+      padding: 28px;
+      padding-top: 28px;
+      cursor: pointer;
+      position: relative; 
+    justify-content: center;
+     align-items: center;
+     width: 35px;
+     height: 25px;
+   border-radius: 5px;
+  }
+  #navigation.open{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    height: 400px;
+    width: 100%;
+    top: 0px;
+    margin-top: 82px;
+    transform: translateX(0%);
+    background-color: #0B0B0B;
+    z-index: 300;
+  } 
+
+  .hamburgerbutton{
+    opacity: 100;
+      margin: 4px;
+      width: 35px;
+height: 5px;
+background: white;
+border-radius: 5px;
+  }
+
+  #navigation{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    height: 400px;
+    width: 100%;
+    margin-top: 82px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    background-color: #0B0B0B;
+    z-index: 300;
+} 
+}
+
+
+
+  #introduction {
+    margin-top: 100px;
+    position:static;
+    display: grid;
+    min-height: 900px;
+    max-height: 900px;
+    grid-template-rows: 100%;
+   grid-template-columns: 100%;
+    grid-template-areas:
+ "introImage"
+   
+  }
+
+  #introductionText {
+   position:static;
+    display: grid;
+    min-height: 300px;
+    max-height: 300px;
+    margin-top: 110px;
+    margin-left: 25px;
+    margin-bottom: -400px;
+    grid-template-rows: 100%;
+   grid-template-columns: 100%;
+    grid-template-areas:
+ "introTextBox"
+   
+  }
+  
+  #introImage {
+
+    grid-area: introImage;
+    background-image: url(images/GD_2021_Intro_Graphic_fix2.png
+    );
+   
+    }
+
+   #introTextBox {
+  grid-area: introTextBox;
+    position: relative;
+background-color: rgba(255,255,255,.6);
+  justify-content: center;
+ height: fit-content;
+  padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 2px;
+    max-width: 54%;
+    min-width: auto;
+    z-index: 100;
+    border-style: inset; border-width: 6px; border-color: black;
+    }
+
+
+    .introGridArea {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      align-items: center;
+      display: flex;
+      position: relative;
+    }
+
+    
+
+  #inspirationTextBox {
+   
+  position: relative;
+    background-color: rgba(255,255,255,0.6);
+   width: auto;
+  justify-content: center;
+  height: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+   
+   
+    z-index: 100;
+    border-style: inset; border-width: 6px; border-color: black;
+  
+
+   }
+
+   #inspirationImage {
+grid-area: inspirationImage;
+    background-image: url(images/GD_2021_Bookscopy.png
+    );
+margin-top: -200px;
+    }
+
+
+   
+
+#inspiration {
+  margin-top: 75px;
+  margin-left: 25px;
+  margin-right: 25px;
+  position:static;
+  display: grid;
+  width: auto;
+height: auto;
+
+}
+
+#inspiration2 {
+  margin-top: -70px;
+  margin-left: 25px;
+  margin-right: 25px;
+  position:static;
+  width: auto;
+  display: grid;
+height: auto;
+  
+}
+
+#inspiration2ImageSection {
+  margin-top: 270px;
+  margin-left: 25px;
+  margin-right: 25px;
+  position:static;
+  width: auto;
+  display: grid;
+min-height: 600px;
+max-height: 600px;
+  grid-template-rows: 100%;
+ grid-template-columns: 100%;
+  grid-template-areas:
+  "inspiration2Image"
+
+}
+
+#inspiration3TextBoxSection {
+  margin-top: 75px;
+  margin-left: 25px;
+  margin-right: 25px;
+  position:static;
+  width: auto;
+  display: grid;
+height: fit-auto;
+}
+
+
+
+#inspiration2Image {
+position: relative;
+  grid-area: inspiration2Image;
+  background-image: url(images/GD_2021_Armature.png
+  );
+  background-size: contain;
+width: auto;
+  height:auto;
+  padding: 50px;
+  }
+
+  
+
+
+  .inspiration2ImageGridArea
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+ 
+
+#inspirationTextBox2 {
+  background-color: rgba(255,255,255,0.6);
+
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+ width: auto;
+justify-content: center;
+height: fit-content;
+z-index: 100;
+border-style: inset; border-width: 6px; border-color: black;
+}
+
+ 
+
+#inspiration3TextBox {
+  grid-area: inspiration3TextBox;
+  position: relative;
+  background-color: rgba(255,255,255,0.8);
+  margin-top: 75px;
+  height: fit-content;
+justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 2px;
+ width: auto;
+  z-index: 100;
+  border-style: inset; border-width: 6px; border-color: black;
+ }
+
+
+#casestudiesbutton {
+  grid-area: casestudiesbutton;
+  position: relative;
+ 
+margin-top: -130px;
+justify-content: center;
+  
+ }
+
+ #casestudiesimage {
+grid-area: casestudiesimage;
+  background-image: url(images/GD_2021_CaseStudies_Home.png
+  );
+
+  }
+
+
+ .casestudiesGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+#casestudies {
+  margin-top: 50px;
+position:static;
+display: grid;
+min-height: 900px;
+max-height: 900px;
+margin-left: 25px;
+margin-right: 25px;
+grid-template-rows: 90% 10%;
+grid-template-columns: 100%;
+grid-template-areas:
+  "casestudiesimage" 
+  "casestudiesbutton"
+}
+
+
+#closingTextBox {
+  position: relative;
+  background-color: rgba(255,255,255,0.8);
+  margin-top: 75px;
+  margin-left: 25px;
+ margin-right: 25px;
+ margin-bottom: 200px;
+ height: auto;
+justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 2px;
+ width: auto;
+  z-index: 100;
+  border-style: inset; border-width: 6px; border-color: black;
+}
+
+
+.bodytext {font-size: 23.5px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  font-weight: 550;
+  }
+  
+.button {
+  background-color: black;
+  transition-duration: 0.4;
+  color:white;
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 100px;
+  min-height: 100px;
+font-size: 24px;
+font-family: arsenal;
+letter-spacing: 3px;
+font-weight: 550;
+cursor: pointer;
+border-radius: 15px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {background-color: #57337a;}
+
+.button a {
+  color:white;
+font-size: 24px;
+font-family: arsenal;
+letter-spacing: 3px;
+font-weight: 550;
+      text-decoration: none;
+}
+
+
+#boxsection {
+  column-gap: 10px;
+  margin-top: -150px;
+  position:static;
+  display:grid;
+ height: 800px;
+  width: auto;
+ margin-left: 25px;
+  margin-right: 25px;
+  justify-content: center;
+  grid-template-rows: 100%;
+grid-template-columns: 20% 20% 20% 20% 20%;
+grid-template-areas:
+  "box1 box2 box3 box4 box5" 
+   
+  
+}
+
+.boxGridArea{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+
+#box1 {
+  grid-area: box1;
+  background-image: url(images/GD_2021_Inspiration_1.png
+  );
+  background-size: contain;
+  position: relative;
+}
+
+#box2 {
+  grid-area: box2;
+  background-image: url(images/GD_2021_Inspiration_2.png
+  );
+  background-size: contain;
+  position: relative;
+
+}
+        
+#box3 {
+  grid-area: box3;
+  background-image: url(images/GD_2021_Inspiration_3.png
+  );
+  background-size: contain;
+  position: relative;
+}
+            
+#box4 {
+  grid-area: box4;
+  background-image: url(images/GD_2021_Inspiration_4.png
+  );
+  background-size: contain;
+  position: relative;
+}
+            
+#box5 {
+  grid-area: box5;
+  background-image: url(images/GD_2021_Inspiration_5.png
+  );
+  background-size: contain;
+  position: relative;
+}
+                
+
+#footer {
+
+    width: auto;
+    position:static;
+    position: 100%;
+    display: grid;
+    min-height: 300px;
+    max-height: 300px;
+    grid-template-rows: 100%;
+   grid-template-columns: 100%;
+ grid-template-areas:
+ "footerImage" ;
+   
+  }
+
+
+  
+  #footerImage {
+
+    grid-area: footerImage;
+    background-image: url(images/footer.png
+    );
+  position: relative;
+ justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: auto;
+ background-size: cover;
+ 
+    }
+
+   .footerGridArea {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      display: flex;
+     position: relative;
+    }
+
+  
+    #footercontenttext {
+    
+      color: white;
+      font-family: 'arsenal' 'san-serif';
+    letter-spacing: 3px;
+    font-size: 20px ;
+    font-weight: bold;
+    margin-top: -25px;
+
+  
+    }
+
+  
+
+  
+
+
+
+
+@media only screen and (max-width: 800px) {
+  #boxsection{
+    margin-top: 150px;
+  position:static;
+  display:grid;
+ height: auto;
+  width: auto;
+ margin-left: 25px;
+  margin-right: 25px;
+  justify-content: center;
+  grid-template-columns: 100%;
+grid-template-rows: 20% 20% 20% 20% 20%;
+grid-template-areas:
+  "box1" "box2" "box3" "box4" "box5" 
+}
+
+
+
+#box1 {
+  grid-area: box1;
+  background-image: url(images/GD_2021_Inspiration_1.png
+  );
+  background-size: contain;
+padding-left: 200px;
+padding-right: 200px;
+padding-top: 500px;
+padding-bottom: 500px;
+  position: relative;
+  justify-content: center;
+}
+
+#box2 {
+  grid-area: box2;
+  background-image: url(images/GD_2021_Inspiration_2.png
+  );
+  background-size: contain;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 500px;
+  padding-bottom: 500px;
+    position: relative;
+    justify-content: center;
+}
+        
+#box3 {
+  grid-area: box3;
+  background-image: url(images/GD_2021_Inspiration_3.png
+  );
+  background-size: contain;
+padding-left: 200px;
+padding-right: 200px;
+padding-top: 500px;
+padding-bottom: 500px;
+  position: relative;
+  justify-content: center;
+}
+            
+#box4 {
+  grid-area: box4;
+  background-image: url(images/GD_2021_Inspiration_4.png
+  );
+  background-size: contain;
+padding-left: 200px;
+padding-right: 200px;
+padding-top: 500px;
+padding-bottom: 500px;
+  position: relative;
+  justify-content: center;
+}
+            
+#box5 {
+  grid-area: box5;
+  background-image: url(images/GD_2021_Inspiration_5.png
+  );
+  background-size: contain;
+padding-left: 200px;
+padding-right: 200px;
+padding-top: 500px;
+padding-bottom: 500px;
+  position: relative;
+  justify-content: center;
+}
+
+#casestudies {
+  margin-top: -80px;
+position:static;
+display: grid;
+min-height: 900px;
+max-height: 900px;
+margin-left: 25px;
+margin-right: 25px;
+grid-template-rows: 90% 10%;
+grid-template-columns: 100%;
+grid-template-areas:
+  "casestudiesimage" 
+  "casestudiesbutton"
+}
+
+}
