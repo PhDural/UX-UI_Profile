@@ -223,8 +223,7 @@ justify-content: center;
 
  #casestudiesimage {
 grid-area: casestudiesimage;
-  background-image: url(images/GD_2021_Gov_CaseStudy.png
-  );
+  background-image: url(GD_2021_Gov_CaseStudy.png);
 
   }
 
