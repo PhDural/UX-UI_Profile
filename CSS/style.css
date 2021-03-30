@@ -167,7 +167,7 @@ border-radius: 5px;
 
 #introImage {
 grid-area: introImage;
-    background-image: url(images/GD_2021_Intro_Graphic_fix2.png);
+    background-image: url(Images/GD_2021_Intro_Graphic_fix2.png);
    }
 .introGridArea {
       background-position: center;
