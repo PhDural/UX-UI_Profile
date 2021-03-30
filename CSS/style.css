@@ -165,8 +165,7 @@ border-radius: 5px;
     margin-top: 100px;
     position:static;
     display: grid;
-    min-height: 900px;
-    max-height: 900px;
+   
     grid-template-rows: 100%;
    grid-template-columns: 100%;
     grid-template-areas:
