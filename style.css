@@ -7,35 +7,7 @@ body {
 }
 
 
-#categoryGrid {
-    margin: 0px 5%;
-    display: grid;
-    grid-template-rows: 300px 300px 20px;
-  grid-template-areas:
-    "Project1 Project2 Project3"
-    "Project1 Project2 Project3"
- ;
-}
 
-  
-  #Project1 {
-    grid-area: Project1;
-    background-image: url("Images/HomeProjectImages3-01.png")
-    ;
-  
-  }
-  #Project2 {
-    grid-area: Project2;
-    background-image: url("Images/HomeProjectImages1-01.png")
-    ;
-  }
-  
-  #Project3 {
-    grid-area: Project3;
-    background-image: url("Images/HomeProjectImages2-01.png")
-    ;
-  }
-  
 
 
 
