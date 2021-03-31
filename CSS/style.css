@@ -613,8 +613,8 @@ grid-template-areas:
 
 #box1 {
   grid-area: box1;
-  height: 60%;
-    width: 60%;
+  height: 100%;
+    width: 100%;
     object-fit: contain;
    margin-top: 100px;
    margin-bottom: -200px;
@@ -622,30 +622,30 @@ grid-template-areas:
 
 #box2 {
   grid-area: box2;
-  height: 60%;
-  width: 60%;
+  height: 100%;
+  width: 100%;
   object-fit: contain;
   margin-bottom: -200px;
 }
         
 #box3 {
   grid-area: box3;
-  height: 60%;
-    width: 60%;
+  height: 100%;
+    width: 100%;
     object-fit: contain;
 }
             
 #box4 {
   grid-area: box4;
-  height: 60%;
-  width: 60%;
+  height: 100%;
+  width: 100%;
   object-fit: contain;
 }
             
 #box5 {
   grid-area: box5;
-  height: 60%;
-  width: 60%;
+  height: 100%;
+  width: 100%;
   object-fit: contain;
 }     
 
