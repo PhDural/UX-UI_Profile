@@ -599,8 +599,7 @@ border-radius: 5px;
 #navBar2 {
   position: fixed;
   top: 90vh;
-
-   width: 100%;
+width: 100%;
     display: flex;
     flex-direction: row;
     background-color: 	  #57337a;
